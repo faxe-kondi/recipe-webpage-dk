@@ -199,7 +199,7 @@ text-transform: uppercase;
   height: fit-content;
   box-sizing: border-box;
   width: var(--width-12col);
-  margin: 30px auto 0 auto;
+  margin: 50px auto 0 auto;
 }
 
 .todays_recipes_content_block {
@@ -1170,7 +1170,7 @@ cursor: pointer;
 }
 
 .dessert_top_display_mentions_box {
-  height: 100;
+  height: auto;
   width: auto;
   display: flex;
   background-color: var(--background-color-light);
@@ -1226,7 +1226,7 @@ margin: auto 0 auto 20px;
   height: fit-content;
   box-sizing: border-box;
   width: var(--width-12col);
-  margin: 30px auto 0 auto;
+  margin: 50px auto 0 auto;
 }
 
 .category_selection_box {
@@ -1300,7 +1300,7 @@ text-decoration: underline;
   height: fit-content;
   box-sizing: border-box;
   width: var(--width-12col);
-  margin: 30px auto 0 auto;
+  margin: 50px auto 0 auto;
   flex-wrap: wrap;
 }
 
@@ -1369,8 +1369,6 @@ font-weight: 700;
   background-color: var(--color_dark);
   border: 1px solid var(--background-color-light);
   border-radius: 5px;
-  font-size: 16px;
-  font-weight: 700;
   cursor: pointer;
   padding: 12px 50px;
   text-transform: uppercase;
@@ -1381,6 +1379,7 @@ font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 16px;
+  font-weight: 700; 
   }
 
   .seasonal_picks_box_desc_bottom_button button:hover {
@@ -1406,21 +1405,16 @@ font-weight: 700;
   .features {
     height: fit-content;
     width: var(--width-full);
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows:130px auto;
-    gap: var(--grid-gap);
   }
   
   .features_content {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: var(--grid-gap);
-    height: fit-content;
-    box-sizing: border-box;
+    height: auto;
     width: var(--width-12col);
     margin: 30px auto 0 auto;
+    box-sizing: border-box;
   }
 
   .features_content_top {
@@ -1975,15 +1969,11 @@ margin: 0 2.5px 0 0;
   .dessert_top_display_container {
     width: 100%;
     margin: 0 0 0 0;
-    padding: 0 10% 0 10%;
+    padding: 5% 10% 5% 10%;
   }
 
   .dessert_top_display_highlight {
     grid-column: 1 / span 6;
-    grid-row: 3;
-    margin: 10% 0 10% 0;
-    text-transform: uppercase;
-    cursor: pointer;
     }
 
     .dessert_top_display_highlight img {
@@ -1993,7 +1983,7 @@ margin: 0 2.5px 0 0;
     .dessert_top_display_highlight h3 {
       font-size: 16px;
       color: var(--color_dark);
-    }
+    } 
     
     .dessert_top_display_highlight h2 {
       font-size: 20px;
@@ -2001,17 +1991,14 @@ margin: 0 2.5px 0 0;
     }
 
     .dessert_top_display_mentions {
-      grid-column: 9 / span 4;
+      grid-column: 9 / span 5;
       grid-row: 3;
       justify-content: space-between;
-      margin: 0 auto 0 auto;
-      height: fit-content;
-      margin-top: 15.3%;
-      
+      height: 100%;
     }
 
     .dessert_top_display_mentions_box {
-      height: 68px;
+      height: fit-content;
       width: auto;
       display: flex;
       background-color: var(--background-color-light);
@@ -2019,6 +2006,11 @@ margin: 0 2.5px 0 0;
       border-radius: 5px;
       margin: 0;
     } 
+
+    .dessert_top_display_mentions_box img {
+      height: auto;
+      width: 34%;
+    }
 
     .dessert_top_display_mentions_box:nth-child(2) {
       margin: 4px 0 4px 0;
@@ -2028,17 +2020,140 @@ margin: 0 2.5px 0 0;
       margin: 0 0 4px 0;
     }
 
-    .dessert_top_display_mentions_box h4{
-      font-size: 14px;
-      margin: auto 0 auto 20px;
+    .category_selection {
+      max-width: 1024px;
+    }
+
+    .category_selection_headline {
+      max-width: 1024px;
+      width: 80%;
+    }
+
+    .category_selection_content {
+      max-width: 1024px;
+      width: 80%;
+    }
+
+    .category_selection_box {
+      height: 200px;  
+    }
+
+    .category_selection_box_highlight h3 {
+      font-size: 30px;
+    }
+
+    .seasonal_picks {
+      max-width: 1024px;
+    }
+
+    .seasonal_picks_headline {
+      max-width: 1024px;
+      width: 80%;
+    }
+
+    .seasonal_picks_content {
+      max-width: 1024px;
+      width: 80%;
+    }
+
+    .seasonal_picks_box_desc_bottom_button button {
+      font-size: 16px;
+      font-weight: 700;
+      padding: 12px 30px;
+    }
+
+    .features {
+      max-width: 1024px;
+    }
+
+    .features_headline {
+      max-width: 1024px;
+      width: 80%;
+    }
+
+    .features_content {
+      width: 80%;
+      max-width: 1024px;
+      display: grid;
+      grid-template-columns: none;
+      justify-content:center;
+    }
+
+    .features_content_top {
+      grid-template-columns: none;
+      grid-template-rows: repeat(2, 1fr);
+      max-width: 1024px;
+      width: 100%;
+      margin: auto 0 auto 0;
+    }
+
+    .features_content_middle {
+      grid-template-columns: none;
+      grid-template-rows: repeat(2, 1fr);
+      max-width: 1024px;
+      width: 100%;
+      margin: auto 0 auto 0;
+      margin-top: 10px;
+    }
+
+    .features_content_bottom {
+      grid-template-columns: none;
+      grid-template-rows: repeat(2, 1fr);
+      max-width: 1024px;
+      width: 100%;
+      margin: auto 0 auto 0;
+      margin-top: 10px;
+    }
+
+    .features_box_big_right {
+      grid-row: 2;
+    }
+
+    
+    .features_box_big_left {
+      grid-row: 2;
+    }
+
+    .features_content_middle {
+      margin: auto 0 auto 0;
+    }
+
+    .desserts_discover_headline {
+      max-width: 1024px;
+      width: 80%;
+    }
+
+    .desserts_discover_content {
+      max-width: 1024px;
+      width: 80%;
+    }
+
+    .desserts_discover_box img {
+      height: 40%;
+      width: var(--width-full);
+    }
+
+    .desserts_discover_box_text_bottom {
+      display: block;
+      margin-top: 12px;
+    }
+
+    .desserts_discover_box_text_top h5 {
+      font-size:18px;
+      margin: 0 0 5px 0;
       }
       
-    .dessert_top_display_mentions_box h5 {
-      font-size: 12px;
-      margin: auto 0 auto 20px;
-      font-weight: 500;
+      .desserts_discover_box_text_top p {
+        font-size: 14px;
       }
 
+      .desserts_discover_box_text_bottom_info {
+        font-size: 14px ;
+      }
+
+      .desserts_discover_box_text_bottom_button {
+        margin-top: 12px;
+      }
 
 }
 
@@ -2165,5 +2280,147 @@ margin: 0 2.5px 0 0;
     padding: 0 10% 0 10%;
   }
 
+  .dessert_top_display {
+    max-width: 768px;
+  }
+
+  .dessert_top_display_container {
+    padding: 5% 10% 5% 10%;
+  }
+
+  .dessert_top_display_highlight {
+    grid-column: 1 / span 12;
+    }
+
+    .dessert_top_display_mentions {
+      display: flex;
+      grid-column: 1 / span 12;
+      grid-row: 5;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .dessert_top_display_mentions_box:nth-child(2) {
+      margin: 0 2.5px 0 5px;
+    }
+
+    .dessert_top_display_mentions_box:nth-child(3) {
+      margin: 0 5px 0 2.5px;
+    }
+
+        .dessert_top_display_mentions_box h4{
+      font-size: 14px;
+      margin-left: 10px;
+      }
+      
+    .dessert_top_display_mentions_box h5 {
+      font-size: 10px;
+      margin-top: 5px;
+      margin-left: 10px;
+      }
+
+      .dessert_top_display_mentions_box img {
+        height: auto;
+        width: 40%;
+      }
+
+      .category_selection {
+        max-width: 768px;
+      }
+  
+      .category_selection_headline {
+        max-width: 768px;
+        width: 80%;
+      }
+  
+      .category_selection_content {
+        max-width: 768px;
+        width: 80%;
+      }
+
+      .category_selection_box {
+        height: 200px;  
+      }
+
+      .category_selection_box_highlight h3 {
+        font-size: 26px;
+      }
+
+      .seasonal_picks {
+        max-width: 768px;
+      }
+  
+      .seasonal_picks_headline {
+        max-width: 768px;
+        width: 80%;
+      }
+  
+      .seasonal_picks_content {
+        max-width: 768px;
+        width: 80%;
+      }
+
+      .seasonal_picks_box_desc_top h5 {
+        font-size:18px;
+        font-weight: 700; 
+        }
+        
+        .seasonal_picks_box_desc_top p {
+          font-size: 14px;
+          font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        .seasonal_picks_box_desc_bottom {
+          margin-top: 10px;
+        }
+
+        .seasonal_picks_box_desc_bottom_info {
+          font-size: 14px ;
+        }
+
+      .seasonal_picks_box_desc_bottom_button button {
+        padding: 12px 12px;
+      }
+
+      .seasonal_picks_box_desc_bottom_button button a {
+        font-size: 12px;
+        }
+
+        .features {
+          max-width: 768px;
+        }
+    
+        .features_headline {
+          max-width: 768px;
+        }
+    
+        .features_content {
+          max-width: 768px;
+        }
+    
+        .features_content_top {
+          max-width: 768px;
+        }
+    
+        .features_content_middle {
+          max-width: 768px;
+        }
+    
+        .features_content_bottom {
+          max-width: 768px;
+        }
+
+        .desserts_discover_box_text_top h5 {
+          font-size:14px;
+          }
+
+        .desserts_discover_box_text_top p {
+          display: none;
+        }
+
+        
+      .desserts_discover_box_text_bottom_info {
+        font-size: 13px ;
+      }
 
 }
