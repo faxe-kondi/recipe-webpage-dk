@@ -269,6 +269,10 @@ padding: 0 0 0 10px;
   cursor: pointer;
 }
 
+.todays_recipes_content_block_bottom_area_right button:hover {
+  background-color: var(--primary-color);
+}
+
 .todays_recipes_content_block_bottom_area_right button a {
 color: var(--color-light);
 text-transform: uppercase;
@@ -563,6 +567,10 @@ h6[data-category="desserts"] {
   width: 179px;
 }
 
+.in_the_kitchen_content_block_top_left_box button:hover {
+  background-color: var(--primary-color);
+}
+
 .in_the_kitchen_content_block_top_left_box button a {
 color: var(--color-light);
 text-transform: uppercase;
@@ -635,6 +643,10 @@ font-size: 16px;
   width: 179px;
 }
 
+.in_the_kitchen_content_block_middle_right_box button:hover {
+  background-color: var(--primary-color);
+}
+
 .in_the_kitchen_content_block_middle_right_box button a {
 color: var(--color-light);
 text-transform: uppercase;
@@ -691,6 +703,10 @@ font-size: 16px;
   cursor: pointer;
   margin-top: 50px;
   width: 179px;
+}
+
+.in_the_kitchen_content_block_bottom_left_box button:hover {
+  background-color: var(--primary-color);
 }
 
 .in_the_kitchen_content_block_bottom_left_box button a {
