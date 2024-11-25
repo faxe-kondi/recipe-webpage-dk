@@ -1123,7 +1123,11 @@ grid-column: 1 / span 5;
 }
 
 .recipe_instruction_two_block_left_step_text {
-  padding-left: 30px;
+  padding-left: 23px;
+}
+
+.recipe_instruction_two_block_left_step_text p {
+  font-size: 14px
 }
 
 .recipe_instruction_two_block_right {
@@ -1906,6 +1910,21 @@ margin: 0 2.5px 0 0;
     margin: auto auto auto 2%;
   }
 
+  .in_the_kitchen_content_block_top_right img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .in_the_kitchen_content_block_middle_left img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .in_the_kitchen_content_block_bottom_right img {
+    width: 100%;
+    height: 100%;
+  }
+
   .footer_content {
     max-width: 1024px;
   }
@@ -1975,6 +1994,12 @@ margin: 0 2.5px 0 0;
     grid-column: 8 / span 6;
     margin-left: 10px;
   }
+
+  .recipe_instruction_two_block_left_step_text {
+    padding-left: 15px;
+  }
+
+
 
   .dessert_top_display {
     margin-top: -35px;
@@ -2191,6 +2216,10 @@ margin: 0 2.5px 0 0;
     font-size: 17px;
   }
 
+  .todays_recipes_content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .kitchen_hero { 
     max-width: 768px; 
    }
@@ -2280,9 +2309,8 @@ margin: 0 2.5px 0 0;
 
   
   .recipe_details_right {
-    margin: 40% 0 0 0
+    margin: 40% 0 0 0;  
   } 
-
 
   .dessert_top_display {
     margin-top: -35px;
